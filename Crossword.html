@@ -196,11 +196,11 @@
   <script src="./jquery.base64.min.js"></script>
   <script>
     var words = [
-      { number: 1, direction: 'down', row: 1, column: 5, clue: 'H&R Block headquarter is located at', answer: $.base64.decode("a2Fuc2FzY2l0eQ=="), hint: 'http://www.angelo.edu/asu_facts/history.php' },
+      { number: 1, direction: 'down', row: 1, column: 5, clue: 'H&R Block headquarters is located at', answer: $.base64.decode("a2Fuc2FzY2l0eQ=="), hint: 'http://www.angelo.edu/asu_facts/history.php' },
       { number: 2, direction: 'down', row: 3, column: 10, clue: 'Use this form if you are filing Income Tax Return for Single and Joint Filers With No Dependents', answer: $.base64.decode('MTA0MGV6'), hint: 'http://www.angelo.edu/services/ticket_office/softball.php' },
       { number: 2, direction: 'across', row: 3, column: 10, clue: 'H&R Block founded in', answer: $.base64.decode('MTk1NQ=='), hint: 'http://www.angelo.edu/services/specialevents/hhuc.php' },
-      { number: 3, direction: 'across', row: 4, column: 1, clue: 'Use this form to report the income, gains, losses, deductions, credits, etc., of a domestic corporation or other entity for a', answer: $.base64.decode('MTEyMHM='), hint: 'http://www.angelo.edu/asu_facts/traditions.php' },
-      { number: 4, direction: 'across', row: 5, column: 9, clue: 'Use this form if you paid someone to care for your child or other qualifying person so you (and your spouse if filing jointly', answer: $.base64.decode('MjQ0MQ=='), hint: 'http://myfuture.angelo.edu/content/news/13280-rams-ultimate-frisbee' },
+      { number: 3, direction: 'across', row: 4, column: 1, clue: 'Use this form to report the income, gains, losses, deductions, credits, etc., of a domestic corporation or other entity for any tax year covered by an election to be an S corporation ', answer: $.base64.decode('MTEyMHM='), hint: 'http://www.angelo.edu/asu_facts/traditions.php' },
+      { number: 4, direction: 'across', row: 5, column: 9, clue: 'Use this form if you paid someone to care for your child or other qualifying person so you (and your spouse if filing jointly) could work or look for work, you may be able to take the credit for child and dependent care expenses ', answer: $.base64.decode('MjQ0MQ=='), hint: 'http://myfuture.angelo.edu/content/news/13280-rams-ultimate-frisbee' },
       { number: 5, direction: 'down', row: 5, column: 12, clue: 'H&R Block went public on year', answer: $.base64.decode('MTk3OA=='), hint: 'http://www.angelosports.com/news/2017/5/20/no-1-rambelles-clinch-trip-to-college-softball-world-series-with-6-2-win-over-texas-woman-s.aspx' },
       { number: 6, direction: 'across', row: 7, column: 1, clue: 'Current VP of Strategic Initiatives', answer: $.base64.decode('VEVETWNCUklERQ=='), hint: 'http://www.angelo.edu/asu_facts/traditions.php' },
       { number: 7, direction: 'down', row: 7, column: 2, clue: 'H&R Block have International Office located at', answer: $.base64.decode('RU5HTEFORA=='), hint: 'http://www.angelo.edu/asu_facts/traditions.php' }
@@ -441,7 +441,7 @@
         }
       }
       if ($('.grid-square.active:not([class*=correct])').length == 0 && !successShown) {
-        alert('Wow! You have successfully completed the Crossword Puzzle...!!! \n Let\'s now read an article');
+        alert('Wow!! \n That was an interesting crossword. \n Let\'s read an article now!');
         window.location.href = "Article.html";
       }
     }
